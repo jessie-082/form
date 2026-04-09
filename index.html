@@ -1,0 +1,54 @@
+<html>
+<head>
+    <title>Form Sederhana</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Formulir Pendaftaran</h2>
+		<h5>Isi data dengan teliti, semua informasi akan digunakan untuk keperluan administrasi</h5>
+		<div class="result hasil">Data akan muncul di sini...</div>
+        <label for="nama">Nama Lengkap:</label>
+        <input type="text" id="nama" placeholder="cth : Siti Aisyah ">
+		<p>Nama sesuai KTP / Akte kelahiran</p>
+        <label for="kelas">Kelas / Tingkatan:</label>
+        <input type="text" id="kelas" placeholder="cth : XII MIPA 3 / 8A / 3SD ">
+		<p>Kelas saat ini / Kelas tujuan</p>
+        <label class="bg">Jenis Kelamin:</label>
+        <div class="radio-group">
+            <label>
+                <input type="radio" name="gender" value="Laki-laki"> Laki-laki
+            </label>
+            <label>
+                <input type="radio" name="gender" value="Perempuan"> Perempuan
+            </label>
+			<label>
+                <input type="radio" name="gender" value="Lainnya"> Lainnya
+            </label>
+        </div>
+		<p>Pilih salah satu</p>
+		<label class="bg">Ekstrakurikuler yang Diminati:</label>
+           <div class="radio-group">
+           <label><input type="checkbox" name="ekskul" value="Basket"> Basket</label>
+           <label><input type="checkbox" name="ekskul" value="Futsal"> Futsal</label>
+           <label><input type="checkbox" name="ekskul" value="Paduan Suara"> Paduan Suara</label>
+        </div>
+		<p>Boleh pilih lebih dari satu(opsional)</p>
+        <label>
+		<label class="bg">Pilih Jadwal Belajar* Wajib:</label>
+          <div class="radio-group">
+          <label><input type="radio" name="jadwal" value="Pagi (07.00-12.00)"> Pagi (07.00-12.00)</label>
+          <label><input type="radio" name="jadwal" value="Siang (12.30-17.00)"> Siang (12.30-17.00)</label>
+          <label><input type="radio" name="jadwal" value="Sore (17.30-20.30)"> Sore (17.30-20.30)</label>
+          <label><input type="radio" name="jadwal" value="Campuran (Fleksibel)"> Campuran (Fleksibel)</label>
+        </div>
+		<p>Pilih salah satu jadwal yang diinginkan</p>
+        <div class="button-group">
+          <button class="tampilkanBtn" type="button">Daftar Sekarang</button>
+          <button class="resetBtn" type="button">Reset Formulir</button>
+        </div>
+    </div>
+
+    <script src="form.js"></script>
+</body>
+</html>
